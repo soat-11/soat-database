@@ -26,3 +26,8 @@ module "database" {
   db_subnet_group_name = module.database-subnet.database_subnet_group_name
   security_group_ids   = [module.database-sg.rds_security_group_id]
 }
+
+output "database_host" {
+  value       = module.database.db_instance_endpoint
+  description = "The endpoint address of the RDS database instance"
+}
