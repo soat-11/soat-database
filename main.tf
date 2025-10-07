@@ -1,6 +1,5 @@
 provider "aws" {
   region  = var.region
-  profile = "soat"
 }
 
 module "database-sg" {
