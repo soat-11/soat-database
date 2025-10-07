@@ -3,11 +3,11 @@ name: CI/CD - Infraestrutura de Banco de Dados (RDS)
 on:
   push:
     branches:
-      - main
+      - development
 
   pull_request:
     branches:
-      - main
+      - development
 
 env:
   AWS_REGION: us-east-1
@@ -62,7 +62,7 @@ jobs:
 
   apply:
     name: "Terraform Apply"
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     needs: [plan]
 
