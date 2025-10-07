@@ -25,10 +25,8 @@ variable "db_name" {
 variable "username" {
   description = "The username for the database"
   type        = string
-  default     = "admin"
+  default     = "eduardo"
 }
-
-
 variable "vpc_id" {
   description = "The ID of the VPC where resources will be deployed"
   type        = string
@@ -38,5 +36,3 @@ variable "subnet_ids" {
   description = "A list of subnet IDs for the database subnet group"
   type        = list(string)
 }
-
-

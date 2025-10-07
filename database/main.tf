@@ -1,6 +1,6 @@
 
 resource "aws_secretsmanager_secret" "db" {
-  name = "db-secret"
+  name = "db-secret-soat-eduardo-final"
 }
 
 resource "aws_secretsmanager_secret_version" "db" {
