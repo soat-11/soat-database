@@ -1,6 +1,8 @@
 terraform {
+
+
   backend "s3" {
-    bucket  = "soat-terraform-challenge"
+    bucket  = "soat-terraform-challenge-database-eduardo"
     key     = "global/s3/terraform.tfstate"
     region  = "us-east-1"
     profile = "soat"
